@@ -1,0 +1,137 @@
+﻿@{
+    decimal cartTotal = 0;
+}
+<h3>Shopping Cart</h3>
+
+<h1>Real Cart Demo Get</h1>
+
+    @if (Model.Count == 0)
+
+    {
+
+<p>Shopping Cart Empty.</p>
+
+    }
+    else
+    {
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Film</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Cost</th>
+        <th></th>
+    </tr>
+
+
+    @foreach (var item in Model)
+    {
+
+    cartTotal += item.OrderQuantity * item.FilmPrice;
+    <tr>
+        <td>@item.FilmID</td>
+        <td>@item.FilmTitle</td>
+        <td>@item.OrderQuantity</td>
+        <td>@item.FilmPrice</td>
+        <td>&pound;@((item.OrderQuantity * item.FilmPrice).ToString("0.00"))</td>
+        <td>
+            <form method="post" asp-action="RemoveCartItem">
+                <input type="hidden" name="FilmID" id="FilmID" value="@item.FilmID" />
+                <input type="submit" value="Delete" />
+            </form>
+        </td>
+    </tr>
+    }
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>&pound;@cartTotal.ToString("0.00")</td>
+        <td></td>
+    </tr>
+
+</table>
+
+    }
+@{
+    decimal cartTotal = 0;
+}
+<h3>Shopping Cart</h3>
+
+<h1>Real Cart Demo Get</h1>
+
+    @if (Model.Count == 0)
+
+    {
+
+<p>Shopping Cart Empty.</p>
+
+    }
+    else
+    {
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Film</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Cost</th>
+        <th></th>
+    </tr>
+
+
+    @foreach (var item in Model)
+    {
+
+    cartTotal += item.OrderQuantity * item.FilmPrice;
+    <tr>
+        <td>@item.FilmID</td>
+        <td>@item.FilmTitle</td>
+        <td>@item.OrderQuantity</td>
+        <td>@item.FilmPrice</td>
+        <td>&pound;@((item.OrderQuantity * item.FilmPrice).ToString("0.00"))</td>
+        <td>
+            <form method="post" asp-action="RemoveCartItem">
+                <input type="hidden" name="FilmID" id="FilmID" value="@item.FilmID" />
+                <input type="submit" value="Delete" />
+            </form>
+        </td>
+    </tr>
+    }
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>&pound;@cartTotal.ToString("0.00")</td>
+        <td></td>
+    </tr>
+
+</table>
+
+    }
+
+
+<form method="post">
+            <div>
+                <label for="FilmID">Film ID</label>
+                <input type="text" value="@Model.FilmID" id="FilmID" name="FilmID" />
+            </div>
+            <div>
+                <label for="FilmTitle">Film Title</label>
+                <input type="text" value="@Model.FilmTitle" id="FilmTitle" name="FilmTitle" />
+            </div>
+            <div>
+                <label for="FilmPrice">Film Price</label>
+                <input type="text" value="@Model.FilmPrice" id="FilmPrice" name="FilmPrice" />
+            </div>
+            <div>
+                <label for="OrderQuantity">Quantity</label>
+                <input type="text" id="OrderQuantity" name="OrderQuantity" />
+            </div>
+            <input type="submit" value="Add To Cart" />
+        </form>

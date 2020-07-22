@@ -1,0 +1,49 @@
+﻿@model MyFilmMVCV1.Models.MovieForm
+@{
+    Layout = "_CMS";
+}
+<h1>@Model.FilmTitle</h1>
+
+
+<form method="post" enctype="multipart/form-data">
+    <input type="hidden" name="FilmID" value="@Model.FilmID" />
+    <div>
+        <label>Film Title</label>
+        <input asp-for="FilmTitle" />
+    </div>
+
+    <div>
+        <label asp-for="FilmCertificate">Film Certificate</label>
+        <input asp-for="FilmCertificate" />
+    </div>
+
+    <div>
+        <label asp-for="FilmDescription">Film Description</label>
+        <textarea asp-for="FilmDescription"></textarea>
+    </div>
+
+    <div>
+        <label asp-for="FilmImage">Film Image (currently: @ViewBag.ImageName)</label>
+        <input asp-for="FilmImage" />
+    </div>
+
+    <div>
+        <label asp-for="FilmPrice">Film Price</label>
+        <input type="text" asp-for="FilmPrice" />
+    </div>
+
+    <div>
+        <label asp-for="Stars">Stars</label>
+        <input type="text" asp-for="Stars" />
+    </div>
+
+    <div>
+        <label asp-for="ReleaseDate">Release Date</label>
+        <input type="date" asp-for="ReleaseDate" />
+    </div>
+
+    <div>
+        <input type="submit" value="Update" class="edit" />
+    </div>
+
+</form>

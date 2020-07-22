@@ -1,0 +1,91 @@
+﻿:root {
+    --add-colour: #6FDC7B;
+    --edit-colour: #F2A038;
+    --delete-colour: #D93030;
+}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #ccc;
+    overflow: auto;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.innerHeader {
+    max-width: 1200px;
+    margin: auto;
+    display:flex;
+    justify-content:space-between;
+}
+.login > p{
+    margin-bottom:0;
+    padding-bottom:0;
+}
+.login > form > button.delete {
+    margin-top: 0;
+}
+main {
+    display: grid;
+    max-width:1200px;
+    margin:auto;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+nav ul li a {
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+}
+table{
+    border-collapse:collapse;
+    border:1px solid #ccc;
+}
+th{
+    font-weight:bold;
+}
+td,th{
+    padding:3px 7px;
+}
+tr:nth-child(even) {
+    background: #CCC;
+}
+form>div{
+    padding-top:10px;
+}
+label{
+    display:block;
+}
+input[type=text], input[type=password], textarea {
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 3px 5px;
+    font-size: 1.2em;
+}
+.add, .edit, .delete {
+    border-radius: 6px;
+    margin-top: 20px;
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 25px;
+}
+.add {
+    background-color: var(--add-colour);
+}
+.edit {
+    background-color: var(--edit-colour);
+}
+.delete {
+    background-color: var(--delete-colour);
+    color: #fff;
+}

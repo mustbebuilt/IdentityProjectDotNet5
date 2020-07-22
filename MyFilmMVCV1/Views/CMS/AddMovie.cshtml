@@ -1,0 +1,57 @@
+﻿@model MyFilmMVCV1.Models.MovieForm
+@{
+    Layout = "_CMS";
+}
+<h1>Add Film</h1>
+
+<p>@ViewBag.msg</p>
+
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label asp-for="FilmTitle">Film Title</label>
+        <input type="text" asp-for="FilmTitle" />
+        <span asp-validation-for="FilmTitle" class="error"></span>
+    </div>
+
+    <div>
+        <label asp-for="FilmCertificate">Film Certificate</label>
+        <input type="text" asp-for="FilmCertificate" />
+        <span asp-validation-for="FilmCertificate" class="error"></span>
+    </div>
+
+    <div>
+        <label asp-for="FilmDescription">Film Description</label>
+        <textarea asp-for="FilmDescription"></textarea>
+    </div>
+
+    <div>
+        <label asp-for="FilmImage">Film Image</label>
+        <input asp-for="FilmImage" />
+    </div>
+
+    <div>
+        <label asp-for="FilmPrice">Film Price</label>
+        <input type="text" asp-for="FilmPrice" />
+        <span asp-validation-for="FilmPrice" class="error"></span>
+    </div>
+
+    <div>
+        <label asp-for="Stars">Stars</label>
+        <input type="text" asp-for="Stars" />
+        <span asp-validation-for="Stars" class="error"></span>
+    </div>
+
+    <div>
+        <label asp-for="ReleaseDate">Release Date</label>
+        <input type="date" asp-for="ReleaseDate" />
+        <span asp-validation-for="ReleaseDate" class="error"></span>
+    </div>
+
+    <div>
+        <input type="submit" value="Add" class="add" />
+    </div>
+
+</form>
+
+
+

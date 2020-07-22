@@ -1,0 +1,18 @@
+﻿@model MyFilmMVCV1.Models.Movie
+@{
+    Layout = "_CMS";
+}
+
+<p>Are you sure you want to delete @Model.FilmTitle?</p>
+
+
+
+<form method="post">
+    <input type="hidden" asp-for="FilmID" />
+
+
+    <div>
+        <input type="submit" value="Delete" class="delete" />
+    </div>
+</form>
+
