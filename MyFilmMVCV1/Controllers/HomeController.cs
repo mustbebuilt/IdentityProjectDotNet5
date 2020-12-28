@@ -43,7 +43,7 @@ namespace MyFilmMVCV1.Controllers
             return View(model);
         }
 
-        public IActionResult Search(String SearchString)
+ public IActionResult Search(String SearchString, String certType)
         {
 
             ViewBag.Name = HttpContext.Session.GetString(SessionName);
@@ -61,12 +61,22 @@ namespace MyFilmMVCV1.Controllers
 
             }
 
+            if (!string.IsNullOrEmpty(certType))
+            {
+                movies = movies.Where(x => x.FilmCertificate == certType);
+            }
+
+            var filmCerts = _context.Movies.Select(m => m.FilmCertificate).Distinct();
 
 
             List<Movie> model = movies.ToList();
             ViewData["SearchString"] = SearchString;
+            ViewData["FilterFilmCert"] = certType;
+            ViewData["filmCerts"] = filmCerts.ToList();
+            ViewData["filmCertsSelectList"] = new SelectList(filmCerts.ToList());
             return View(model);
         }
+
 
         // note uses id because of routing in startup.cs
         [HttpGet]
