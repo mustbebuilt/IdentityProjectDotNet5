@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Sheffield Streams</title>
+    <link rel="stylesheet" href="~/css/cms.css" />
+</head>
+<body>
+    <header>
+        <div class="innerHeader">
+            <div>
+                <h1>Content Management System: @ViewData["PageHeading"]</h1>
+                <nav>
+                    <ul>
+                        <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li><a asp-controller="Home" asp-action="AllFilms">Film List</a></li>
+                        <li><a asp-controller="Home" asp-action="Search">Search</a></li>
+                        <li><a asp-controller="CMS" asp-action="Index">CMS Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+        </div>
+    </header>
+    <main>
+
+        @RenderBody()
+
+
+    </main>
+
+
+    <footer>
+    </footer>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
