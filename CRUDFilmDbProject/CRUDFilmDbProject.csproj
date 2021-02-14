@@ -5,16 +5,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\**" />
+    <Compile Remove="ViewComponents\**" />
     <Compile Remove="Views\Security\**" />
+    <Content Remove="Migrations\**" />
+    <Content Remove="ViewComponents\**" />
     <Content Remove="Views\Security\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <EmbeddedResource Remove="ViewComponents\**" />
     <EmbeddedResource Remove="Views\Security\**" />
+    <None Remove="Migrations\**" />
+    <None Remove="ViewComponents\**" />
     <None Remove="Views\Security\**" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Migrations\" />
     <Folder Include="Views\CMS\" />
     <Folder Include="Views\Home\Shared\" />
-    <Folder Include="ViewComponents\" />
     <Folder Include="Views\Home\Components\ShoppingCart\" />
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\notes\" />
