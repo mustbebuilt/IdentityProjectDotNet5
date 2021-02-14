@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityProject", "CRUDFilmDbProject\IdentityProject.csproj", "{2BE23A04-966E-40E9-9CD0-055CF7CA54B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityProject", "IdentityProject\IdentityProject.csproj", "{2BE23A04-966E-40E9-9CD0-055CF7CA54B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

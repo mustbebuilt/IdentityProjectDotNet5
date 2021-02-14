@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rqI9daI8ciOWlF8oU6cKQr/fuT1R6vXb5NA2hnqtec4aNEtRCVaMRGieAGGSV7Y69w++6de3L9bfOZUaopQ98A==",
+  "dgSpecHash": "cXnTmFsprYZkXV6W9fPSSDh6NZnXg/pL/654s3K+I2MINeYobEYRW14Kqgkuzv5mKCIol5FTj4B4zD2uljdfNQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LabStudent-55-504266\\Source\\Repos\\StarterIdentityProject\\CRUDFilmDbProject\\IdentityProject.csproj",
+  "projectFilePath": "C:\\Users\\LabStudent-55-504266\\source\\repos\\StarterIdentityProject\\IdentityProject\\IdentityProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LabStudent-55-504266\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.11\\microsoft.aspnetcore.cryptography.internal.3.1.11.nupkg.sha512",
     "C:\\Users\\LabStudent-55-504266\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.11\\microsoft.aspnetcore.cryptography.keyderivation.3.1.11.nupkg.sha512",
