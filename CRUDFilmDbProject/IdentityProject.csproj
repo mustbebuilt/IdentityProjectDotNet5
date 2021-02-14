@@ -5,27 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\**" />
     <Compile Remove="ViewComponents\**" />
-    <Content Remove="Migrations\**" />
     <Content Remove="ViewComponents\**" />
-    <EmbeddedResource Remove="Migrations\**" />
     <EmbeddedResource Remove="ViewComponents\**" />
-    <None Remove="Migrations\**" />
     <None Remove="ViewComponents\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Migrations\20210214113053_IdentityMigration.cs" />
-    <Compile Include="Migrations\20210214113053_IdentityMigration.Designer.cs" />
-    <Compile Include="Migrations\20210214121651_IdentityMigration2.cs" />
-    <Compile Include="Migrations\20210214121651_IdentityMigration2.Designer.cs" />
-    <Compile Include="Migrations\AppIdentityDbContextModelSnapshot.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\CMS\" />
     <Folder Include="Views\Home\Shared\" />
-    <Folder Include="Views\Home\Components\ShoppingCart\" />
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\notes\" />
   </ItemGroup>

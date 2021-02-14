@@ -8,9 +8,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
-using CRUDFilmDbProject.Models;
+using IdentityProject.Models;
 
-namespace CRUDFilmDbProject.Controllers
+namespace IdentityProject.Controllers
 {
     public class HomeController : Controller
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace CRUDFilmDbProject.Security
+namespace IdentityProject.Security
 {
     public class AppIdentityDbContext : IdentityDbContext<AppIdentityUser, AppIdentityRole, string>
     {

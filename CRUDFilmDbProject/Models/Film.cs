@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Http;
 
-namespace CRUDFilmDbProject.Models
+namespace IdentityProject.Models
 {
     public class Film
 

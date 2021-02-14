@@ -5878,9 +5878,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LabStudent-55-504266\\Source\\Repos\\StarterIdentityProject\\CRUDFilmDbProject\\CRUDFilmDbProject.csproj",
-      "projectName": "CRUDFilmDbProject",
-      "projectPath": "C:\\Users\\LabStudent-55-504266\\Source\\Repos\\StarterIdentityProject\\CRUDFilmDbProject\\CRUDFilmDbProject.csproj",
+      "projectUniqueName": "C:\\Users\\LabStudent-55-504266\\Source\\Repos\\StarterIdentityProject\\CRUDFilmDbProject\\IdentityProject.csproj",
+      "projectName": "IdentityProject",
+      "projectPath": "C:\\Users\\LabStudent-55-504266\\Source\\Repos\\StarterIdentityProject\\CRUDFilmDbProject\\IdentityProject.csproj",
       "packagesPath": "C:\\Users\\LabStudent-55-504266\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\LabStudent-55-504266\\Source\\Repos\\StarterIdentityProject\\CRUDFilmDbProject\\obj\\",
       "projectStyle": "PackageReference",

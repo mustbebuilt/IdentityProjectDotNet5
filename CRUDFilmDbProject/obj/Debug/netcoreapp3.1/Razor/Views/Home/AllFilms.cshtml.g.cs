@@ -14,20 +14,20 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "C:\Users\LabStudent-55-504266\Source\Repos\StarterIdentityProject\CRUDFilmDbProject\Views\_ViewImports.cshtml"
-using CRUDFilmDbProject;
+using IdentityProject;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\LabStudent-55-504266\Source\Repos\StarterIdentityProject\CRUDFilmDbProject\Views\_ViewImports.cshtml"
-using CRUDFilmDbProject.Models;
+using IdentityProject.Models;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f7051587793fb52cb16fd1458c8b9bb1fe039e84", @"/Views/Home/AllFilms.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"42850bd08fc113b53b30054ae66651a1ba77951c", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a83698f56d0929d2e02697daf39a4bbebb1a9ec3", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_AllFilms : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Home", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -77,8 +77,8 @@ using CRUDFilmDbProject.Models;
 #line hidden
 #nullable disable
             WriteLiteral("    <div class=\"filmThumb\">\r\n        <div>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f7051587793fb52cb16fd1458c8b9bb1fe039e844566", async() => {
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f7051587793fb52cb16fd1458c8b9bb1fe039e844782", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f7051587793fb52cb16fd1458c8b9bb1fe039e844562", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f7051587793fb52cb16fd1458c8b9bb1fe039e844778", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -140,7 +140,7 @@ AddHtmlAttributeValue("", 320, item.FilmTitle, 320, 15, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\r\n        <h3>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f7051587793fb52cb16fd1458c8b9bb1fe039e848993", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f7051587793fb52cb16fd1458c8b9bb1fe039e848989", async() => {
 #nullable restore
 #line 11 "C:\Users\LabStudent-55-504266\Source\Repos\StarterIdentityProject\CRUDFilmDbProject\Views\Home\AllFilms.cshtml"
                                                                                      Write(item.FilmTitle);

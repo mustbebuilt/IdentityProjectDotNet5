@@ -1,6 +1,6 @@
 using System;
 
-namespace CRUDFilmDbProject.Models
+namespace IdentityProject.Models
 {
     public class ErrorViewModel
     {

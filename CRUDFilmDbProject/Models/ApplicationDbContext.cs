@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 
-namespace CRUDFilmDbProject.Models
+namespace IdentityProject.Models
 {
     public class ApplicationDbContext: DbContext
     {

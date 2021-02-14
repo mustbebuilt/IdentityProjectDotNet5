@@ -1,6 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-namespace CRUDFilmDbProject.Models
+namespace IdentityProject.Models
 {
 
     public class Register

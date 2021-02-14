@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Identity;
 
-namespace CRUDFilmDbProject.Security
+namespace IdentityProject.Security
 {
     public class AppIdentityUser :IdentityUser
     {

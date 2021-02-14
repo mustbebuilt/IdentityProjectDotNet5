@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using CRUDFilmDbProject.Models;
-using CRUDFilmDbProject.Security;
+using IdentityProject.Models;
+using IdentityProject.Security;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 
-namespace CRUDFilmDbProject.Controllers
+namespace IdentityProject.Controllers
 {
     public class SecurityController : Controller
     {

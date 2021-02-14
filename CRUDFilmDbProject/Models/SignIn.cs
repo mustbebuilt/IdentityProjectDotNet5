@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
 
-namespace CRUDFilmDbProject.Models
+namespace IdentityProject.Models
 {
     public class SignIn
     {
