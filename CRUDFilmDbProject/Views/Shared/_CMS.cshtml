@@ -20,7 +20,15 @@
                     </ul>
                 </nav>
             </div>
-
+            @if (User.Identity.IsAuthenticated)
+            {
+                <div class="login">
+                    <p>@User.Identity.Name</p>
+                    <form asp-controller="Security" asp-action="SignOut" method="post">
+                        <button type="submit" class="delete">Sign Out</button>
+                    </form>
+                </div>
+            }
 
         </div>
     </header>

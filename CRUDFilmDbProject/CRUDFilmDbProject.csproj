@@ -7,16 +7,20 @@
   <ItemGroup>
     <Compile Remove="Migrations\**" />
     <Compile Remove="ViewComponents\**" />
-    <Compile Remove="Views\Security\**" />
     <Content Remove="Migrations\**" />
     <Content Remove="ViewComponents\**" />
-    <Content Remove="Views\Security\**" />
     <EmbeddedResource Remove="Migrations\**" />
     <EmbeddedResource Remove="ViewComponents\**" />
-    <EmbeddedResource Remove="Views\Security\**" />
     <None Remove="Migrations\**" />
     <None Remove="ViewComponents\**" />
-    <None Remove="Views\Security\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Migrations\20210214113053_IdentityMigration.cs" />
+    <Compile Include="Migrations\20210214113053_IdentityMigration.Designer.cs" />
+    <Compile Include="Migrations\20210214121651_IdentityMigration2.cs" />
+    <Compile Include="Migrations\20210214121651_IdentityMigration2.Designer.cs" />
+    <Compile Include="Migrations\AppIdentityDbContextModelSnapshot.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\CMS\" />
@@ -26,6 +30,7 @@
     <Folder Include="wwwroot\notes\" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.11">

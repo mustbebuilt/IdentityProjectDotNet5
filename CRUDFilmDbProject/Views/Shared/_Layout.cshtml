@@ -23,16 +23,7 @@
 
             </div>
 
-            @if (User.Identity.IsAuthenticated)
-            {
-                <div class="login">
-                    <p>@User.Identity.Name</p>
-                    <p><a asp-controller="CMS" asp-action="Index">CMS</a></p>
-                    <form asp-controller="Security" asp-action="SignOut" method="post">
-                        <button type="submit" class="delete">Sign Out</button>
-                    </form>
-                </div>
-            }
+
 
         </div>
     </header>
