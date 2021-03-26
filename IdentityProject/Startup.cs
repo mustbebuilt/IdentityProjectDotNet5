@@ -40,10 +40,6 @@ namespace IdentityProject
                 opt.LoginPath = "/Security/SignIn";
                 opt.AccessDeniedPath = "/Security/AccessDenied";
             });
-            services.AddSession(opt =>
-            {
-                opt.IdleTimeout = TimeSpan.FromSeconds(60);
-            });
 
 
         }
@@ -66,8 +62,7 @@ namespace IdentityProject
    
             app.UseAuthentication();
             app.UseAuthorization();
-            app.UseSession();
-
+ 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
